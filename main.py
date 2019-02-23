@@ -38,11 +38,13 @@ def normalize_and_scale(eigenvals, highest_tone = 7902.13, lowest_tone = 16.35):
     return scale
 
 def sine(frequency, length, rate):
+    # Sine generation code is from https://stackoverflow.com/questions/42192239/remove-control-clicking-sound-using-pyaudio-as-an-oscillator
     length = int(length * rate)
     factor = (float(frequency) * (np.math.pi * 2) / rate)
     return np.sin(np.arange(length) * factor)
 
 def tonify(tone, stream):
+    # Tonification code is from https://stackoverflow.com/questions/42192239/remove-control-clicking-sound-using-pyaudio-as-an-oscillator
     volume = 0.5
     duration = 0.05
     samples = [sine(tone, duration, 44100)]
