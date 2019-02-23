@@ -1,4 +1,4 @@
-#¯\\\_(ツ)\_/¯
+# ¯\\\_(ツ)\_/¯
 
 The inspiration for this project was from: https://www.jasondavies.com/graph-music/
 
