@@ -2,7 +2,6 @@
 import ase.cluster
 import ase.neighborlist
 import numpy as np
-import EasyMIDI
 import pyaudio
 
 
